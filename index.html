@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <script src="./script.js"></script>
+    <nav>
+        <ul>
+            <li><a onclick="openTab('home')">Home</a></li>
+            <li><a onclick="openTab('education')">Education</a></li>
+            <li><a onclick="openTab('notes')">Notes</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="tab-content active">
+        <h1>About Me</h1>
+        <p>Hi, I'm Puja Panja from Kamarpukur, West Bengal. Kamarpukur is a small place known for being the birthplace
+            of Shri Ramakrishna. Through this site, I aim to share more about my background, interests, and work. Feel
+            free to explore the different sections for more information!</p>
+    </section>
+
+    <section id="education" class="tab-content">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>10+2:</strong> Goghat High School, with PCM (Physics, Chemistry, Mathematics)</li>
+            <li><strong>Graduation:</strong> Ramakrishna Sarada Vidya Mahapith, B.Sc in Physics (Hons)</li>
+            <li><strong>Post Graduation:</strong> Kalyani University, M.Sc in Physics</li>
+            <li><strong>M.Tech:</strong> IIIT Guwahati, M.Tech in CSE (Computer Science and Engineering)</li>
+        </ul>
+    </section>
+
+    <section id="notes" class="tab-content">
+        <h2>Notes</h2>
+        <p>Please log in to access your personal notes:</p>
+    
+        <form action="./loginSignup/login.php" method="POST">
+            <label for="userId">Username:</label>
+            <input type="text" id="userId" name="username" required><br><br>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+    
+            <input type="submit" value="Login">
+        </form>
+    
+        <p>If you don't have an account, register below:</p>
+    
+        <form action="./loginSignup/register.php" method="POST">
+            <label for="userIdReg">Username:</label>
+            <input type="text" id="userIdReg" name="username" required><br><br>
+    
+            <label for="passwordReg">Password:</label>
+            <input type="password" id="passwordReg" name="password" required><br><br>
+    
+            <input type="submit" value="Register">
+        </form>
+    </section>
+    
+
+</body>
+
+</html>
